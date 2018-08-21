@@ -29,10 +29,11 @@ function BoardMember(name, homeState, training){
   this.homeState = homeState
   this.training = training
  
-  prototype.veto = function(){
+  BoardMember.prototype.veto = function(){
     return 'No, I must disagree'
   }
-  this.approve = function(){
+  
+  BoardMember.prototype.approve = function(){
     return 'You can do that!'
   }
   this.doCharity = function(){
