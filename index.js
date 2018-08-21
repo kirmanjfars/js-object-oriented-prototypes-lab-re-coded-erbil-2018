@@ -29,7 +29,7 @@ function BoardMember(name, homeState, training){
   this.homeState = homeState
   this.training = training
 
-  this.prototype.veto = function(){
+  prototype.veto = function(){
     return 'No, I must disagree'
   }
   this.approve = function(){
